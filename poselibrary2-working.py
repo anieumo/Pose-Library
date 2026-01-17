@@ -188,7 +188,9 @@ class MainWindow(QMainWindow):
         jointslist = pm.ls( selection=True )
         #to string everything in jointslist
         jointslist = [str(node) for node in jointslist]
-
+#you are getting the controls by callig out ames directly 
+#click on a characters root and all saved poses open
+#and it automatically looks for locators and hip joint
         #all controls
         print(jointslist)
         
