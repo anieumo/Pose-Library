@@ -70,7 +70,6 @@ class MainWindow(QMainWindow):
     def item_clicked(self, item):
         currentitem = self.list_widget.currentItem()
         
-
     def importAnim(self):
         #Find current item in saved folders
         text = self.list_widget.currentItem().text()
@@ -158,7 +157,6 @@ class MainWindow(QMainWindow):
         with open(exportAnimFile, 'w') as fp:
             json.dump(res, fp)
         
-
 #If no skeleton is selected dont open app
 if not pm.selected():
     print("Please select a skeleton root")
